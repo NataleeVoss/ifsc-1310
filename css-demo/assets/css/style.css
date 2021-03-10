@@ -1,0 +1,246 @@
+/*---CSS Demo Stylesheet---*/
+
+/*---------Box Sizing---------*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/*-------Responsive Images-------*/
+img {
+  max-width:100X;
+  height:auto;
+}
+
+
+/*-------Utility Class-------*/
+
+.container {
+  width:80vw
+  margin:40px auto;
+}
+
+/*---------Global Styles---------*/
+
+body {
+    margin:0;
+    font-family:'Lato', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header.primary {
+    background-color:#F2DFCE;
+    text-align:center;
+    color:#ffffff;
+    text-shadow: 1px  1px #000000;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+header.primary h1 {
+  font-size:3.2rem;
+  margin:20px 0;
+}
+
+header.primary h1 a {
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2 {
+  font-size:2rem;
+  /* Top | Left/Right | Bottom */
+  margin:20px auto 40px;
+}
+
+header.primary nav {
+  width:80vw;
+  margin:20px auto;
+  max-width:900px;
+}
+
+header.primary nav ul {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding:0;
+}
+
+header.primary nav ul li {
+  list style-type:none;
+}
+
+header.primary nav a:link, header.primary nav a:visited {
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#000000;
+  backgroun-color:rgba(0, 0, 0, 4);
+  padding:8px 16px;
+  border-radius:20px;
+  transition:.5s;
+}
+
+header.primary nav a:hover, header.primary nav a:active {
+  backgroun-color:rgba(0, 0, 0, 8);
+}
+
+#intro {
+  border:1px dotted #c0c0c0;
+  padding-bottom:1.5rem;
+}
+
+
+#intro h2 {
+  color:#F2DFCE;
+  text-shadow: 1px 1px #000;
+}
+
+#intro p {
+  line-height: 1.5;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-flow: row space-between; <--- this is the same as saying the tow above it, flex-direction, and justify-content */
+  border:1px dotted #c0c0c0;
+  padding-bottom:2.5rem;
+  
+}
+
+
+#content article.post {
+  width:30%;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 4);
+  padding:.7em;
+  border-radius:10px;
+  font-size:9rem;
+  transition:.5s;
+}
+
+#content article.post:hover {
+  box-shadow:0 8px 16px rgba(0, 0, 0, 4);
+}
+
+
+#content .post figure {
+  margin:0;
+}
+
+#content article time, #content article figcaption, #content article footer {
+  font-size:.8rem;
+  text-transform:uppercase;
+  color:#c0c0c0;
+}
+
+#content article img {
+  border-radius:4px;
+}
+
+#content article a:link, #content article a:visited {
+  color:color:#F2DFCE;
+}
+
+#content article a:hover, #content article a:active {
+  text-decoration:none;
+}
+
+/*-------Attribute Selector-------*/
+aside[role="complementary"] {
+  background-color:#8C634A;
+  color:#fff;
+  padding:2.2rem;
+} 
+
+aside.container {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+aside article.widget {
+  width:40%;
+  
+}
+
+aside a:link, aside a:visited {
+  color:white;
+  display:block;
+  margin-top:20px;
+}
+
+aside footer {
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------Extra Stuff-------Responsive Design-------
+@media screen and (max-width:690px){
+  header.primary nav ul {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin:0 auto;
+}
+header.primary nav a {
+  display:block;
+}
+header.primary nav li{
+  margin-bottom:10px;
+}
+}
+
+
+/*-------My Personal Work-------
+#intro.container {
+  background-color:#A63C3C;
+  text-align:end;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+#content.container {
+  background-color:#A0D3D9;
+  text-align: center;
+  font-family:font-family: 'Akaya Telivigala', cursive;
+}
+
+/*-------This is where you started having confusions, haha it's alright!-------*/
+/*aside article {
+  background-color:#732D2D;
+  text-align:end;
+  font-family: 'Quicksand', sans-serif;
+}
+/*----------Color Code-------*/
+/*-----#A0D3D9
+#F2DFCE
+#8C634A
+#A63C3C
+#732D2D-------/
+
